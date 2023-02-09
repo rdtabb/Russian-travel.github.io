@@ -1,30 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Путешествия по России</title>
-    <link rel="stylesheet" href="./blocks/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./blocks/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <img src="./Sprint-3-images/__logo.svg" alt="Россия логотип" class="header__logo">
-        <div class="link-container">
-            <a href="#" aria-selected="true" class="header__lang-link">Ru</a>
-            <a href="#" aria-selected="false" class="header__lang-link">En</a>
-        </div>
+      <img
+        src="./Sprint-3-images/__logo.svg"
+        alt="Россия логотип"
+        class="header__logo"
+      />
+      <div class="link-container">
+        <a href="#" aria-selected="true" class="header__lang-link">Ru</a>
+        <a href="#" aria-selected="false" class="header__lang-link">En</a>
+      </div>
     </header>
-        <div class="container">
-            <section class="lead">
-                <h1 class="lead__title">Путешествия по России</h1>
-                <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-                <img src="./Sprint-3-images/lead-polka.jpg" alt="" class="lead__image">
-                <p class="lead__caption">ВАША ПОЛКА - ВЕРХНЯЯ</p>
-            </section>
-        </div>
-</body>
+
+    <main class="main">
+      <section class="lead">
+        <h1 class="lead__title">Путешествия по России</h1>
+        <p class="lead__subtitle">
+          Настоящая страна не в выпусках новостей, а здесь.
+        </p>
+        <img
+          src="./Sprint-3-images/lead-polka.jpg"
+          alt=""
+          class="lead__image"
+        />
+        <p class="lead__caption">ВАША ПОЛКА - ВЕРХНЯЯ</p>
+      </section>
+
+      <section class="intro">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">
+          По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
+          36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома,
+          не видели? На самом деле, Россия — это целая вселенная с ласковым
+          морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё
+          увидеть все эти красоты можно без миллионов на счету, загранпаспорта и
+          многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая
+          мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и
+          проехала 20 тысяч километров по родной стране. Мы выбрали и описали
+          некоторые интересные места, достойные вашего отпуска.
+        </p>
+        <ul class="intro__list">
+          <li><span class="intro__list-strong">Часовых поясов</span> 11</li>
+          <li>
+            <span class="intro__list-strong"
+              >Объектов природного наследия ЮНЕСКО</span
+            >
+            12
+          </li>
+          <li>
+            <span class="intro__list-strong"
+              >Объектов культурного наследия ЮНЕСКО</span
+            >
+            16
+          </li>
+          <li>
+            <span class="intro__list-strong">Природных заповедников</span> 105
+          </li>
+          <li><span class="intro__list-strong">Аэропортов</span> 241</li>
+        </ul>
+      </section>
+
+      <section class="photo-grid">
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-arisa.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-atharva-tulsi.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-baikal-2.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-baikal.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-elbrus.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-ergaki.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-kamchatka-1.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-kamchatka-2.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-kondratiev.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-sochi.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-train.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+        <img
+          src="./Sprint-3-images/photo-grid/photo-grid-tuman.jpg"
+          alt=""
+          class="photo-grid__item"
+        />
+      </section>
+    </main>
+  </body>
 </html>
