@@ -41,8 +41,8 @@
 /* ------------------------------------------- */
 
 .container {
-    --width: 61.5rem;
-    --padding: 1rem;
+    --width: 984px;
+    --padding: 16px;
 
     width: min(var(--width), 100% - var(--padding));
     margin-inline: auto;
@@ -74,7 +74,7 @@ body {
 
 .header {
     --width: 74rem;
-    --padding: 1rem;
+    --padding: 16px;
 
     width: min(var(--width), 100%);
     margin-inline: auto;
@@ -82,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: var(--padding);
 }
 
 .link-container {
@@ -105,8 +105,8 @@ body {
 /* ------------------------------------------- */
 
 .lead {
-    --width: 61.5rem;
-    --padding: 1rem;
+    --width: 984px;
+    --padding: 16px;
 
     width: min(var(--width), 100%);
     margin-inline: auto;
@@ -147,7 +147,7 @@ body {
 /* ------------------------------------------- */
 
 .intro {
-    --width: 61.5rem;
+    --width: 984px;
     --padding: 1rem;
 
     width: min(var(--width), 100% - var(--padding));
@@ -188,16 +188,52 @@ body {
 
 .photo-grid {
     --width: 1184px;
-    --padding: 1rem;    
+    --padding: 16px;    
 
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    width: min(var(--width), 100% - clamp(var(--padding), 5vw, 3rem));
     gap: var(--padding);
-    max-width: fit-content;
     padding-bottom: 92px;
     place-self: center;
 }
 
-.photo-grid > * {
-    max-width: 280px;
+/* ------------------------------------------- */
+/* Places section
+/* ------------------------------------------- */
+
+.places {
+    --width: 984px;
+    --padding: 16px; 
+
+    display: grid;
+    width: min(var(--width), 100%);
+    gap: clamp(53px, 10vw, 80px);
+    margin-inline: auto;
+}
+
+.place {
+    display: grid;
+    grid-template-areas: 
+        'title website'
+        'image paragraph'
+        '. paragraph'
+    ;
+}
+
+.place__title {
+    grid-area: title;
+}
+
+.place__image {
+    max-width: 100%;
+    grid-area: image;
+}
+
+.place__website {
+    grid-area: website;
+}
+
+.paragraph-wrapper {
+    grid-area: paragraph;
 }
