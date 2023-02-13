@@ -21,19 +21,18 @@
     --fs-900: clamp(1.5rem, 10vw, 6rem);
     --fs-800: 72px;
     --fs-700: clamp(2rem, 7vw, 3.375rem);
-    --fs-500: 1.5rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-250: 0.875rem;
+    --fs-500: 24px;
+    --fs-400: 18px;
+    --fs-300: 16px;
+    --fs-250: 14px;
     --fs-200: 12px;
     --fs-100: 0.625rem;
-}
 
-@media (max-width: 768px) {
-    :root {
-        /* --fs-900: 1.5rem; */
-        --fs-500: 1rem;
-    }
+    --z-100: 100;
+    --z-200: 200;
+    --z-300: 300;
+    --z-400: 400;
+    --z-500: 500;
 }
 
 /* ------------------------------------------- */
@@ -124,7 +123,7 @@ body {
 
 .lead__subtitle {
     margin: 0;
-    font-size: var(--fs-500);
+    font-size: clamp(16px, 3vw, 24px);
     text-align: center;
     padding-bottom: clamp(2.5rem, 5vw, 4rem);
     padding-inline: var(--padding);
@@ -207,9 +206,10 @@ body {
     --padding: 16px; 
 
     display: grid;
-    width: min(var(--width), 100% - var(--padding));
+    width: min(var(--width), 100%);
     gap: clamp(53px, 10vw, 80px);
     margin-inline: auto;
+    margin-bottom: clamp(66px, 5vw, 92px)
 }
 
 .place {
@@ -221,19 +221,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     column-gap: clamp(28px, 3vw, 40px);
     row-gap: clamp(32px, 10vw, 48px);
-}
-
-@media (max-width: 768px) {
-    .place {
-        grid-template-areas: 
-         'title'
-         'website'
-         'image'
-         'paragraph'
-        ;
-        grid-template-columns: 1fr;
-        margin-inline: auto;
-    }
 }
 
 .place__title {
@@ -274,4 +261,133 @@ body {
 .place__paragraph {
     max-width: 484px;
     font-size: clamp(var(--fs-300), 2vw, var(--fs-400));
+}
+
+@media (max-width: 768px) {
+    .place {
+        grid-template-areas: 
+         'title'
+         'website'
+         'image'
+         'paragraph'
+        ;
+        grid-template-columns: 1fr;
+        margin-inline: auto;
+    }
+
+    .place__title,
+    .place__website,
+    .paragraph-wrapper {
+        padding-inline: var(--padding);
+    }
+}
+
+/* ------------------------------------------- */
+/* Cover section
+/* ------------------------------------------- */
+
+.cover {
+    display: grid;
+    grid-template-areas: 
+        'overlay'
+        'overlay'
+    ;
+    place-items: center;
+    gap: 32px;
+
+
+    width: min(1184px, 100%);
+    margin-inline: auto;
+    margin-bottom: clamp(64px, 5vw, 92px);
+    position: relative;
+}
+
+.cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: hsl(216, 6%, 17%, .3);
+    z-index: var(--z-200);
+}
+
+.cover__background {
+    width: 100%;
+    object-fit: cover;
+    grid-area: overlay;
+    z-index: var(--z-100);
+    position: relative;
+}
+
+.cover__title {
+    grid-area: overlay;
+    align-self: end;
+    z-index: var(--z-300);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-black);
+    max-width: 560px;
+    text-align: center;
+    position: relative;
+    grid-row: 1 / 2;
+}
+
+.cover__subtitle {
+    grid-area: overlay;
+    align-self: start;
+    z-index: var(--z-300);
+    position: relative;
+    max-width: 360px;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 768px) {
+    .cover__title {
+        font-size: 32px;
+        max-width: 250px;
+    }
+
+    .cover__subtitle {
+        font-size: var(--fs-250);
+    }
+}
+
+/* ------------------------------------------- */
+/* Footer section
+/* ------------------------------------------- */
+
+.footer {
+    --width: 1184px;
+    --padding: 16px;
+
+    width: min(var(--width), 100% - var(--padding));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 24px;
+}
+
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    font-size: var(--fs-250);
+}
+
+.footer__copyright {
+    font-size: var(--fs-250);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .footer__nav-list {
+        flex-direction: column;
+        font-size: var(--fs-500);
+        gap: 32px;
+    }
 }
