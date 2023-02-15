@@ -75,7 +75,7 @@ body {
 
 .header {
     --width: 74rem;
-    --padding: 16px;
+    --padding: 24px;
 
     width: min(var(--width), 100%);
     margin-inline: auto;
@@ -96,10 +96,23 @@ body {
     color: var(--clr-primary);
     text-decoration: none;
     font-size: var(--fs-500);
+    opacity: .7;
+    transition: opacity 150ms ease-in;
+}
+
+.header__lang-link:hover {
+    opacity: 1;
 }
 
 .header__lang-link[aria-selected="true"] {
     text-decoration: underline;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .header {
+        --padding: 16px;
+    }
 }
 
 /* ------------------------------------------- */
@@ -146,13 +159,27 @@ body {
     padding-top: .5rem;
 }
 
+@media (max-width: 1024px) {
+    .lead__caption {
+        padding-left: 24px;
+    }
+}
+
 @media (max-width: 768px) {
+    .lead {
+        --padding: 16px;
+    }
+
     .lead__title {
         line-height: 110%;
     }
 
     .lead__subtitle {
         line-height: 125%;
+    }
+
+    .lead__caption {
+        padding-left: 16px;
     }
 }
 
@@ -162,7 +189,7 @@ body {
 
 .intro {
     --width: 984px;
-    --padding: 1rem;
+    --padding: 24px;
 
     width: min(var(--width), 100% - var(--padding));
     margin-inline: auto;
@@ -225,10 +252,10 @@ body {
 
 .places {
     --width: 984px;
-    --padding: 16px; 
+    --padding: 24px; 
 
     display: grid;
-    width: min(var(--width), 100%);
+    width: min(var(--width), 100% - var(--padding));
     gap: clamp(53px, 10vw, 80px);
     margin-inline: auto;
     margin-bottom: clamp(66px, 5vw, 92px)
@@ -264,6 +291,9 @@ body {
     grid-area: website;
     align-self: end;
     justify-self: start;
+
+    display: grid;
+    gap: 12px;
 }
 
 .place__url-heading {
@@ -276,6 +306,12 @@ body {
 .place__link {
     color: inherit;
     line-height: 122%;
+    opacity: .7;
+    transition: opacity 150ms ease-in;
+}
+
+.place__link:hover {
+    opacity: 1;
 }
 
 .paragraph-wrapper {
@@ -291,6 +327,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .places {
+        --padding: 0;
+    }
+
     .place {
         grid-template-areas: 
          'title'
@@ -305,7 +345,7 @@ body {
     .place__title,
     .place__website,
     .paragraph-wrapper {
-        padding-inline: var(--padding);
+        padding-inline: 16px;
     }
 
     .place__title {
@@ -411,6 +451,7 @@ body {
 .footer__link {
     cursor: pointer;
     transition: opacity 150ms ease-in;
+    line-height: 112%;
 }
 
 .footer__nav-list:hover .footer__link:not(.footer__link:hover) {
@@ -419,10 +460,8 @@ body {
 
 .footer__copyright {
     font-size: var(--fs-250);
+    line-height: 114%;
 }
-
-
-
 
 @media (max-width: 768px) {
     .footer {
@@ -435,5 +474,10 @@ body {
         flex-direction: column;
         font-size: var(--fs-500);
         gap: 32px;
+    }
+
+    .footer__link,
+    .footer__copyright {
+        line-height: 100%;
     }
 }
