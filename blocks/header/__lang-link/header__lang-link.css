@@ -10,7 +10,7 @@
     opacity: 1;
 }
 
-.header__lang-link[aria-selected="true"] {
+.header__lang-link_selected_true {
     text-decoration: underline;
     opacity: 1;
 }

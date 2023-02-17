@@ -19,4 +19,9 @@
     inset: 0;
     background-color: hsl(216, 6%, 17%, .3);
     z-index: var(--z-200);
+    transition: background-color 150ms ease-in;
+}
+
+.cover:hover::before {
+    background-color: hsl(216, 6%, 17%, .6);
 }
