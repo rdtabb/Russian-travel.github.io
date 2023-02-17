@@ -1,0 +1,14 @@
+.place__title {
+    grid-area: title;
+    font-weight: var(--fw-black);
+    font-size: clamp(32px, 12vw, var(--fs-800));
+    max-width: 460px;
+    line-height: 106%;
+}
+
+@media (max-width: 768px) {
+    .place__title {
+        padding-inline: 16px;
+        line-height: 110%;
+    }
+}

@@ -1,0 +1,12 @@
+.place__paragraph-wrapper {
+    grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+@media (max-width: 768px) {
+    .paragraph-wrapper {
+        padding-inline: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.footer__link {
+    cursor: pointer;
+    transition: opacity 150ms ease-in;
+    line-height: 112%;
+}
+
+.footer__nav-list:hover .footer__link:not(.footer__link:hover) {
+    opacity: .6;
+}
+
+@media (max-width: 768px) {
+    .footer__link {
+        line-height: 100%;
+    }
+}

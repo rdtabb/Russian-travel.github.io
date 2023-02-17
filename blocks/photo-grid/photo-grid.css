@@ -1,0 +1,11 @@
+.photo-grid {
+    --width: 1184px;
+    --padding: 16px;    
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    width: min(var(--width), 100% - clamp(var(--padding), 5vw, 48px));
+    gap: var(--padding);
+    padding-bottom: 92px;
+    place-self: center;
+}

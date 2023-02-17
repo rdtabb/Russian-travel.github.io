@@ -1,0 +1,28 @@
+:root {
+    --ff-primary: 'Inter', sans-serif;
+
+    --bg-primary: #333;
+    --clr-primary: #fff;
+
+    --clr-accent: #AAA;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --fs-900: clamp(24px, 10vw, 96px);
+    --fs-800: 72px;
+    --fs-700: clamp(32px, 7vw, 54px);
+    --fs-500: 24px;
+    --fs-400: 18px;
+    --fs-300: 16px;
+    --fs-250: 14px;
+    --fs-200: 12px;
+    --fs-100: 10px;
+
+    --z-100: 100;
+    --z-200: 200;
+    --z-300: 300;
+    --z-400: 400;
+    --z-500: 500;
+}

@@ -1,0 +1,8 @@
+.intro {
+    --width: 984px;
+    --padding: 24px;
+
+    width: min(var(--width), 100% - var(--padding));
+    margin-inline: auto;
+    padding-bottom: 88px;
+}

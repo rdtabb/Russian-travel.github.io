@@ -1,0 +1,7 @@
+.cover__background {
+    width: 100%;
+    object-fit: cover;
+    grid-area: overlay;
+    z-index: var(--z-100);
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.cover__subtitle {
+    grid-area: overlay;
+    align-self: start;
+    z-index: var(--z-300);
+    line-height: 122%;
+    position: relative;
+    max-width: 360px;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 768px) {
+    .cover__subtitle {
+        font-size: var(--fs-250);
+        line-height: 114%;
+    }
+}

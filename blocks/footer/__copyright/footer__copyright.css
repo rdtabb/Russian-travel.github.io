@@ -1,0 +1,10 @@
+.footer__copyright {
+    font-size: var(--fs-250);
+    line-height: 114%;
+}
+
+@media (max-width: 768px) {
+    .footer__copyright {
+        line-height: 100%;
+    }
+}

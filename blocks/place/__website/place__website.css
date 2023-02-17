@@ -1,0 +1,14 @@
+.place__website {
+    grid-area: website;
+    align-self: end;
+    justify-self: start;
+
+    display: grid;
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .place__website {
+        padding-inline: 16px;
+    }
+}

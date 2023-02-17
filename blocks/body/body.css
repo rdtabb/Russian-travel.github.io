@@ -1,0 +1,7 @@
+.body {
+    background-color: var(--bg-primary);
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}

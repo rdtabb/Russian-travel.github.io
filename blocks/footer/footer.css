@@ -1,0 +1,19 @@
+.footer {
+    --width: 1184px;
+    --padding: 16px;
+
+    width: min(var(--width), 100% - var(--padding));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    padding-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+}

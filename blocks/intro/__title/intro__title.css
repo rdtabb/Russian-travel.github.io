@@ -1,0 +1,13 @@
+.intro__title {
+    margin: 0;
+    padding-bottom: 40px;
+    font-weight: var(--fw-black);
+    font-size: var(--fs-700);
+    line-height: 107%;
+}
+
+@media (max-width: 768px) {
+    .intro__title {
+        line-height: 109%;
+    }
+}

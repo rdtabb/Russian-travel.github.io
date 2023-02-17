@@ -1,0 +1,23 @@
+.place {
+    display: grid;
+    grid-template-areas: 
+        'title website'
+        'image paragraph'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: clamp(28px, 3vw, 40px);
+    row-gap: clamp(32px, 10vw, 48px);
+}
+
+@media (max-width: 768px) {
+    .place {
+        grid-template-areas: 
+         'title'
+         'website'
+         'image'
+         'paragraph'
+        ;
+        grid-template-columns: 1fr;
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,16 @@
+.places {
+    --width: 984px;
+    --padding: 24px; 
+
+    display: grid;
+    width: min(var(--width), 100% - var(--padding));
+    gap: clamp(53px, 10vw, 80px);
+    margin-inline: auto;
+    margin-bottom: clamp(66px, 5vw, 92px)
+}
+
+@media (max-width: 768px) {
+    .places {
+        --padding: 0;
+    }
+}

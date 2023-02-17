@@ -1,0 +1,16 @@
+.header__lang-link {
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-size: var(--fs-500);
+    opacity: .7;
+    transition: opacity 150ms ease-in;
+}
+
+.header__lang-link:hover {
+    opacity: 1;
+}
+
+.header__lang-link[aria-selected="true"] {
+    text-decoration: underline;
+    opacity: 1;
+}

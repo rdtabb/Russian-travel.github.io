@@ -1,0 +1,14 @@
+.lead {
+    --width: 984px;
+    --padding: 16px;
+
+    width: min(var(--width), 100%);
+    margin-inline: auto;
+    padding-bottom: clamp(64px, 5vw, 92px);
+}
+
+@media (max-width: 768px) {
+    .lead {
+        --padding: 16px;
+    }
+}

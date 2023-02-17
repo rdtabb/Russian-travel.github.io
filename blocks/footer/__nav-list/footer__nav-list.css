@@ -1,0 +1,14 @@
+.footer__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    font-size: var(--fs-250);
+}
+
+@media (max-width: 768px) {
+    .footer__nav-list {
+        flex-direction: column;
+        font-size: var(--fs-500);
+        gap: 32px;
+    }
+}
