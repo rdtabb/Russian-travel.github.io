@@ -8,6 +8,7 @@
     max-width: 360px;
     text-align: center;
     z-index: var(--z-300);
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {

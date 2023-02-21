@@ -10,20 +10,8 @@
     width: min(1184px, 100%);
     margin-inline: auto;
     margin-bottom: clamp(64px, 5vw, 92px);
+    cursor: pointer;
     position: relative;
-}
-
-.cover::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: hsl(216, 6%, 17%, .3);
-    z-index: var(--z-200);
-    transition: background-color 150ms ease-in;
-}
-
-.cover:hover::before {
-    background-color: hsl(216, 6%, 17%, .8);
 }
 
 @media (max-width: 1024px) {

@@ -10,6 +10,7 @@
     text-align: center;
     position: relative;
     grid-row: 1 / 2;
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {
