@@ -4,8 +4,29 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    width: min(var(--width), 100% - clamp(var(--padding), 5vw, 48px));
+    width: min(var(--width), 100% - 48px);
     gap: var(--padding);
     padding-bottom: 92px;
     place-self: center;
+}
+
+@media (max-width: 1280px) {
+    .photo-grid {
+        width: min(var(--width), 100% - 24px);
+        gap: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .photo-grid {
+        width: min(var(--width), 100% - 24px);
+        gap: var(--padding);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        width: min(var(--width), 100% - 16px);
+        gap: 12px;
+    }
 }

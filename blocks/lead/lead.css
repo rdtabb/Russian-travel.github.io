@@ -6,9 +6,3 @@
     margin-inline: auto;
     padding-bottom: clamp(64px, 5vw, 92px);
 }
-
-@media (max-width: 768px) {
-    .lead {
-        --padding: 16px;
-    }
-}

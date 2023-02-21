@@ -4,6 +4,7 @@
 
     width: min(var(--width), 100%);
     margin-inline: auto;
+    box-sizing: border-box;
 
     display: flex;
     align-items: center;

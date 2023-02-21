@@ -1,4 +1,4 @@
-.place__paragraph-wrapper {
+.paragraph-wrapper {
     grid-area: paragraph;
     display: flex;
     flex-direction: column;

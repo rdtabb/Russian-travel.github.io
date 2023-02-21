@@ -1,8 +1,10 @@
 .footer__nav-list {
     display: flex;
-    list-style: none;
     gap: 18px;
     font-size: var(--fs-250);
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 @media (max-width: 768px) {

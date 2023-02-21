@@ -1,5 +1,6 @@
 .footer__copyright {
     font-size: var(--fs-250);
+    margin: 0;
     line-height: 114%;
 }
 

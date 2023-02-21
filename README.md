@@ -1,6 +1,6 @@
 # Проект: Путешествие по России
 
-## Ссылка на Pages (проект отражается некорректно)
+## Ссылка на Pages 
 https://rdtabb.github.io/Russian-travel.github.io/
 
 ## Обзор

@@ -5,8 +5,20 @@
         'image paragraph'
     ;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: clamp(28px, 3vw, 40px);
-    row-gap: clamp(32px, 10vw, 48px);
+    column-gap: 40px;
+    row-gap: 48px;
+}
+
+@media (max-width: 1280px) {
+    .place {
+        column-gap: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .place {
+        column-gap: 28px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -19,5 +31,6 @@
         ;
         grid-template-columns: 1fr;
         margin-inline: auto;
+        row-gap: 32px;
     }
 }

@@ -2,10 +2,12 @@
     cursor: pointer;
     transition: opacity 150ms ease-in;
     line-height: 112%;
+    text-decoration: none;
+    color: var(--clr-primary);
 }
 
-.footer__nav-list:hover .footer__link:not(.footer__link:hover) {
-    opacity: .6;
+.footer__link:hover {
+    opacity: .8;
 }
 
 @media (max-width: 768px) {

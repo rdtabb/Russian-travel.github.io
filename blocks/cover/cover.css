@@ -23,5 +23,11 @@
 }
 
 .cover:hover::before {
-    background-color: hsl(216, 6%, 17%, .6);
+    background-color: hsl(216, 6%, 17%, .8);
+}
+
+@media (max-width: 1024px) {
+    .cover {
+        gap: 16px;
+    }
 }

@@ -1,7 +1,7 @@
 :root {
     --ff-primary: 'Inter', sans-serif;
 
-    --bg-primary: #333;
+    --bg-primary: #2A2C2F;
     --clr-primary: #fff;
 
     --clr-accent: #AAA;
@@ -10,9 +10,9 @@
     --fw-bold: 700;
     --fw-black: 900;
 
-    --fs-900: clamp(24px, 10vw, 96px);
+    --fs-900: 96px;
     --fs-800: 72px;
-    --fs-700: clamp(32px, 7vw, 54px);
+    --fs-700: 54px;
     --fs-500: 24px;
     --fs-400: 18px;
     --fs-300: 16px;

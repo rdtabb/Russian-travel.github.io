@@ -4,5 +4,18 @@
 
     width: min(var(--width), 100% - var(--padding));
     margin-inline: auto;
-    padding-bottom: 88px;
+    padding-bottom: 92px;
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        --padding: 16px;
+        padding-bottom: 88px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding-bottom: 64px;
+    }
 }

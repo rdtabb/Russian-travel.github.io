@@ -1,10 +1,10 @@
 .place__link {
     color: inherit;
     line-height: 122%;
-    opacity: .7;
+    opacity: 1;
     transition: opacity 150ms ease-in;
 }
 
 .place__link:hover {
-    opacity: 1;
+    opacity: .8;
 }
