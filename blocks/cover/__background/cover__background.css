@@ -1,7 +1,11 @@
 .cover__background {
+    margin: 0;
+    padding: 0;
+    
     width: 100%;
     object-fit: cover;
     grid-area: overlay;
     z-index: var(--z-100);
     position: relative;
+    box-sizing: border-box;
 }

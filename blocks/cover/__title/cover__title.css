@@ -1,19 +1,20 @@
 .cover__title {
+    margin: 0;
+    padding: 0;
     grid-area: overlay;
     align-self: end;
     z-index: var(--z-300);
     font-size: var(--fs-800);
     font-weight: var(--fw-black);
     line-height: 106%;
-    margin: 0;
     max-width: 560px;
     text-align: center;
     position: relative;
     grid-row: 1 / 2;
-    pointer-events: none;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .cover__title {
         font-size: 32px;
         max-width: 250px;

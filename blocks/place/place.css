@@ -1,12 +1,15 @@
 .place {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-areas: 
         'title website'
         'image paragraph'
     ;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: .96fr 1fr;
     column-gap: 40px;
     row-gap: 48px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1280px) {
@@ -15,13 +18,14 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .place {
         column-gap: 28px;
+        grid-template-columns: .95fr 1fr;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .place {
         grid-template-areas: 
          'title'

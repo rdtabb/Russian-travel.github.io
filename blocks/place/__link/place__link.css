@@ -1,8 +1,11 @@
 .place__link {
+    margin: 0;
+    padding: 0;
     color: inherit;
-    line-height: 122%;
+    line-height: 22px;
     opacity: 1;
     transition: opacity 150ms ease-in;
+    box-sizing: border-box;
 }
 
 .place__link:hover {

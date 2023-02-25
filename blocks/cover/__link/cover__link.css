@@ -1,3 +1,20 @@
+.cover__link {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        'overlay'
+        'overlay'
+    ;
+    place-items: center;
+    gap: 32px;
+
+    color: var(--clr-primary);
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
 .cover__link::before {
     content: '';
     position: absolute;
@@ -9,4 +26,10 @@
 
 .cover__link:hover::before {
     background-color: hsl(216, 6%, 17%, .8);
+}
+
+@media (max-width: 1023px) {
+    .cover__link {
+        gap: 32px;
+    }
 }

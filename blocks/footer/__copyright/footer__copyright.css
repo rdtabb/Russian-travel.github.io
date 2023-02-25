@@ -1,7 +1,9 @@
 .footer__copyright {
-    font-size: var(--fs-250);
     margin: 0;
+    padding: 0;
+    font-size: var(--fs-250);
     line-height: 114%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {

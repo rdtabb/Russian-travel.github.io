@@ -1,14 +1,18 @@
 .lead__title {
     margin: 0;
+    padding: 0;
     font-size: var(--fs-900);
     font-weight: var(--fw-black);
     line-height: 104%;
     text-align: center;
     padding-bottom: 32px;
     padding-inline: var(--padding);
+    margin-inline: auto;
+    max-width: 720px;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .lead__title {
         line-height: 110%;
         font-size: 40px;

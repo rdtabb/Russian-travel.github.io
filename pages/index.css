@@ -1,5 +1,5 @@
-
 /* normalize */
+/* @import url(../vendor/reset.css); */
 @import url(../vendor/normalize.css);
 
 /* Custom variables */
@@ -19,6 +19,7 @@
 @import url(../blocks/header/__lang-link/header__lang-link.css);
 @import url(../blocks/header/__link-list/header__link-list.css);
 @import url(../blocks/header/__lang-link/_selected/header__lang-link_selected.css);
+@import url(../blocks/header/__logo/header__logo.css);
 
 /* Lead section */
 @import url(../blocks/lead/lead.css);

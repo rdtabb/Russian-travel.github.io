@@ -1,4 +1,6 @@
 .places {
+    margin: 0;
+    padding: 0;
     --width: 984px;
     --padding: 24px; 
 
@@ -7,12 +9,12 @@
     gap: 80px;
     margin-inline: auto;
     margin-bottom: 92px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
     .places {
-        gap: 73px;
-        margin-bottom: 90px;
+        --width: 928px;
     }
 }
 
@@ -20,7 +22,15 @@
     .places {
         --padding: 0;
 
-        margin-bottom: 66px;
+        padding-inline: 24px;
+        margin-bottom: 90px;
+        gap: 73px;
+    }
+}
+
+@media (max-width: 320px) {
+    .places {
+        padding-inline: 0;
         gap: 50px;
     }
 }

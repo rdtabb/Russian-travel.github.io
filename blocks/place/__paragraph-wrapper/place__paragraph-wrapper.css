@@ -1,11 +1,14 @@
 .paragraph-wrapper {
+    margin: 0;
+    padding: 0;
     grid-area: paragraph;
     display: flex;
     flex-direction: column;
     gap: 26px;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .paragraph-wrapper {
         padding-inline: 16px;
     }

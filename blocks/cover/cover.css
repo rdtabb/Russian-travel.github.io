@@ -1,21 +1,21 @@
 .cover {
-    display: grid;
-    grid-template-areas: 
-        'overlay'
-        'overlay'
-    ;
-    place-items: center;
-    gap: 32px;
-
+    margin: 0;
+    padding: 0;
     width: min(1184px, 100%);
     margin-inline: auto;
-    margin-bottom: clamp(64px, 5vw, 92px);
-    cursor: pointer;
+    margin-bottom: 92px;
     position: relative;
+    box-sizing: border-box;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .cover {
-        gap: 16px;
+        margin-bottom: 88px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cover {
+        margin-bottom: 64px;
     }
 }

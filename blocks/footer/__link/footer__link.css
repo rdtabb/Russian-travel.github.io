@@ -1,17 +1,22 @@
 .footer__link {
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     transition: opacity 150ms ease-in;
     line-height: 112%;
     text-decoration: none;
     color: var(--clr-primary);
+    font-size: var(--fs-300);
+    box-sizing: border-box;
 }
 
 .footer__link:hover {
     opacity: .8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .footer__link {
         line-height: 100%;
+        font-size: var(--fs-500);
     }
 }

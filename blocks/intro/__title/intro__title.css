@@ -1,12 +1,14 @@
 .intro__title {
     margin: 0;
+    padding: 0;
     padding-bottom: 40px;
     font-weight: var(--fw-black);
     font-size: var(--fs-700);
     line-height: 107%;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .intro__title {
         line-height: 109%;
         font-size: 32px;

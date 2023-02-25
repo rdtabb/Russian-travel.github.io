@@ -1,3 +1,6 @@
 .intro__list-strong {
+    margin: 0;
+    padding: 0;
     font-weight: var(--fw-bold);
+    box-sizing: border-box;
 }
