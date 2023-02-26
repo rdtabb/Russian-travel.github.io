@@ -5,7 +5,6 @@
     color: var(--clr-accent);
     line-height: 12px;
     letter-spacing: 2px;
-    margin: 0;
     text-transform: uppercase;
     box-sizing: border-box;
 }

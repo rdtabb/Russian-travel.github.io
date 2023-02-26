@@ -1,8 +1,7 @@
 .lead__image {
-    margin: 0;
     padding: 0;
     display: block;
     width: min(var(--width), 100%);
-    margin-inline: auto;
+    margin: 0 auto;
     box-sizing: border-box;
 }

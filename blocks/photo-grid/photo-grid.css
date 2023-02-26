@@ -1,6 +1,5 @@
 .photo-grid {
     margin: 0;
-    padding: 0;
     --width: 1184px;
     --padding: 16px;    
 
@@ -8,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     width: min(var(--width), 100% - 48px);
     gap: var(--padding);
-    padding-bottom: 92px;
+    padding: 0 0 92px;
     place-self: center;
     box-sizing: border-box;
 }
@@ -38,7 +37,6 @@
 
 @media (max-width: 320px) {
     .photo-grid {
-        padding-inline: 16px;
-        padding-bottom: 64px;
+        padding: 0 16px 64px;
     }
 }

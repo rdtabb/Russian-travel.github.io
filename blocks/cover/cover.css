@@ -1,9 +1,7 @@
 .cover {
-    margin: 0;
     padding: 0;
     width: min(1184px, 100%);
-    margin-inline: auto;
-    margin-bottom: 92px;
+    margin: 0 auto 92px;
     position: relative;
     box-sizing: border-box;
 }

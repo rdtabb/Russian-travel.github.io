@@ -1,16 +1,14 @@
 .lead {
-    margin: 0;
-    padding: 0;
     --width: 984px;
     --padding: 0;
 
     width: min(var(--width), 100% - var(--padding));
-    margin-inline: auto;
-    padding-bottom: 95px;
+    margin: 0 auto;
+    padding: 0 0 95px;
     box-sizing: border-box;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .lead {
         padding-bottom: 92px;
     }
@@ -18,15 +16,13 @@
 
 @media (max-width: 1024px) {
     .lead {
-        padding-bottom: 92px;
         padding-inline: 48px;
     }
 }
 
 @media (max-width: 768px) {
     .lead {
-        padding-bottom: 88px;
-        padding-inline: 0;
+        padding: 0 0 88px;
     }
 }
 
