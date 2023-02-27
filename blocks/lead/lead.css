@@ -10,7 +10,8 @@
 
 @media (max-width: 1024px) {
     .lead {
-        padding: 0 48px 92px;
+        /* padding: 0 48px 92px; */
+        padding: 0 0 92px;
     }
 }
 
