@@ -6,7 +6,6 @@
     grid-row: 2 / 3;
     align-self: start;
     line-height: 122%;
-    margin: 0;
     max-width: 360px;
     text-align: center;
     z-index: var(--z-300);

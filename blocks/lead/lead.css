@@ -8,15 +8,9 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 1279px) {
-    .lead {
-        padding-bottom: 92px;
-    }
-}
-
 @media (max-width: 1024px) {
     .lead {
-        padding-inline: 48px;
+        padding: 0 48px 92px;
     }
 }
 

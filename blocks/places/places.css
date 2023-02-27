@@ -28,6 +28,7 @@
 
 @media (max-width: 320px) {
     .places {
+        margin-bottom: 66px;
         padding-inline: 0;
         gap: 50px;
     }

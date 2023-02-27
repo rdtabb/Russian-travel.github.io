@@ -1,6 +1,3 @@
 .header__lang-link_selected {
-    margin: 0;
-    padding: 0;
     text-decoration: underline;
-    box-sizing: border-box;
 }

@@ -28,8 +28,8 @@
     background-color: hsl(216, 6%, 17%, .8);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 320px) {
     .cover__link {
-        gap: 32px;
+        gap: 16px;
     }
 }
